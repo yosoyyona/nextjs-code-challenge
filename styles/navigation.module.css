@@ -1,0 +1,22 @@
+.nav {
+  background-color: #eeb3af;
+  position: fixed;
+  width: 100vw;
+  padding: 30px
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px
+}
+
+.nav ul li {
+  list-style: none;
+  transform: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav ul li:hover {
+  transform: scale(1.05);
+}
