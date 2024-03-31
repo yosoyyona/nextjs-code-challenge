@@ -1,19 +1,9 @@
 import Link from "next/link";
 import styles from "../../styles/home.module.css"
+import { API_URL, IList } from "../constants";
 
 export const metadata = {
   title: 'Home',
-}
-
-export const API_URL = "https://books-api.nomadcoders.workers.dev";
-
-interface IList {
-  list_name: string,
-  display_name: string,
-  list_name_encoded: string,
-  oldest_published_date: string,
-  newest_published_date: string,
-  updated: string,
 }
 
 async function getLists() {
