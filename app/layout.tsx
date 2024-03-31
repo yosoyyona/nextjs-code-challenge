@@ -5,8 +5,8 @@ import "../styles/global.css"
 
 export const metadata :Metadata = {
   title: {
-    template: "%s | Yonabooks",
-    default: "Yonabooks",
+    template: "%s | NYT Best Sellers",
+    default: "NYT Best Sellers",
   },
   description: 'The New York Times Best Sellers',
 }
