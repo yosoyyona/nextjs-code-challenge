@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 
-.container h1 {
+.wrapper h1 {
   padding: 30px;
 }
 
@@ -24,5 +24,11 @@
   border: 1px double #4E2F68;
   padding: 10px;
   margin: 10px;
+  transform: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.container div:hover {
+  transform: scale(1.05);
 }
 
