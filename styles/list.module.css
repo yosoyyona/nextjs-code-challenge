@@ -15,9 +15,9 @@
 .container {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 25px;
-  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 90%;
   margin: 0 auto;
   align-items: start;
 }
