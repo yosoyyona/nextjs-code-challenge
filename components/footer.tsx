@@ -1,5 +1,5 @@
 import styles from "../styles/footer.module.css"
-import { API_URL } from "../app/(home)/page"
+import { API_URL } from "../app/constants"
 
 async function getCopyright() {
   const response = await fetch(`${API_URL}/lists`);
