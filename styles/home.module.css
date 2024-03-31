@@ -4,8 +4,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 20px;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .wrapper h1 {
@@ -21,7 +21,7 @@
 
 .container div {
   display: block;
-  border: 1px double #4E2F68;
+  border: 1px solid #4E2F68;
   padding: 10px;
   margin: 10px;
   transform: none;

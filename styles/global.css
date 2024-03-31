@@ -127,6 +127,7 @@ body {
   background-color: #8ED3DA;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #4E2F68;
+  overflow-x: hidden;
 }
 
 a {
@@ -139,19 +140,19 @@ a:hover {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 h2 {
-  font-size: 19px;
+  font-size: 22px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h4 {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 h5 {

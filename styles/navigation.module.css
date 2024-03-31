@@ -1,15 +1,18 @@
 .nav {
   background-color: #eeb3af;
   width: 100%;
-  padding: 30px
+  padding: 30px;
 }
 
 .nav ul {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .nav ul li {
+  padding: 0px 60px 0px 30px;
   list-style: none;
   transform: none;
   transition: all 0.1s ease-in-out;

@@ -20,7 +20,7 @@ export default async function HomePage() {
       <div className={styles.container}>
         {lists.map((list) => (
           <div key={list.list_name_encoded}>
-            <Link href={`/list/${list.list_name_encoded}`}>
+            <Link prefetch href={`/list/${list.list_name_encoded}`}>
               <h3>{list.list_name}</h3>
             </Link>
             <p>Last update: {list.newest_published_date}</p>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/footer.module.css"
 import { API_URL } from "../app/constants"
 
@@ -12,7 +13,7 @@ export default async function Footer() {
   const copyright = await getCopyright();
   return (
     <div className={styles.div}>
-      &copy; Yonabooks | {copyright}
+      <Link href="https://github.com/yosoyyona" target="_blank">Yona Park</Link> &nbsp; | &nbsp; {copyright}
     </div>
   )
 }
