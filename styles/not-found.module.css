@@ -1,6 +1,6 @@
 .div {
   display: flex;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  height: calc(100vh - 119px);
+  width: 100%;
 }

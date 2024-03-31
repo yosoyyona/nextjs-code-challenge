@@ -8,7 +8,7 @@ export const metadata :Metadata = {
     template: "%s | Yonabooks",
     default: "Yonabooks",
   },
-  description: 'The best sellers',
+  description: 'The New York Times Best Sellers',
 }
 
 export default function RootLayout({

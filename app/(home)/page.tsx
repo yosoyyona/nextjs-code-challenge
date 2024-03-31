@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "../../styles/home.module.css"
 
 export const metadata = {
   title: 'Home',
@@ -11,7 +12,7 @@ interface IList {
   display_name: string,
   list_name_encoded: string,
   oldest_published_date: string,
-  newest: string,
+  newest_published_date: string,
   updated: string,
 }
 
@@ -24,12 +25,18 @@ async function getLists() {
 export default async function HomePage() {
   const lists = await getLists();
   return (
-    <div>
-      {lists.map((list) => (
-        <li key={list.list_name_encoded}>
-          <Link href={`/books/${list.list_name_encoded}`}>{list.list_name}</Link>
-        </li>
-      ))}
+    <div className={styles.wrapper}>
+      <h1>Explore The New York Times Best Sellers by List</h1>
+      <div className={styles.container}>
+        {lists.map((list) => (
+          <div key={list.list_name_encoded}>
+            <Link href={`/list/${list.list_name_encoded}`}>
+              <h3>{list.list_name}</h3>
+            </Link>
+            <p>Last update: {list.newest_published_date}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

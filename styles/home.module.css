@@ -1,8 +1,28 @@
-.container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 25px;
-  max-width: 90%;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  padding: 20px;
   margin: 0 auto;
 }
+
+.container h1 {
+  padding: 30px;
+}
+
+.container {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+
+.container div {
+  display: block;
+  border: 1px double #4E2F68;
+  padding: 10px;
+  margin: 10px;
+}
+
